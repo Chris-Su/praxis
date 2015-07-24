@@ -1,3 +1,3 @@
 # praxis
-willie bot functions \n
+willie bot functions
 this is a praxis project
