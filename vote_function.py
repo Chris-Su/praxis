@@ -6,7 +6,7 @@ type2 = {'A': 0 , 'B': 0, 'C': 0, 'D': 0}
 response = None
 
 @module.commands('echo')
-@module.example('.vote start [1/2] | .vote end | .vote [option] | .vote results')
+@module.example('.vote start (1/2) | .vote end | .vote [option] | .vote results')
 def vote(bot, trigger):
     if triggger.group(2).lower() == 'start'
         if triggger.group(3) == 1
