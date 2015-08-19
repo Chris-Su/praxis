@@ -13,7 +13,7 @@ db_connection = None
 db_cursor = None
 
 def setup(config):
-  global db_connection
+	global db_connection
 	global db_cursor
 	db_connection = pg8000.connect(user="jafoster", database="jafoster")
 	db_connection.autocommit = True
