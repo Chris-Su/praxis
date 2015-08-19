@@ -4,16 +4,16 @@ from pprint import pprint
 import pg8000
 
 class Modes(Enum):
-    IDLE = 0
-    OPEN = 1
-    CLOSED = 2
+  IDLE = 0
+  OPEN = 1
+  CLOSED = 2
 
 mode = Modes.IDLE
 db_connection = None
 db_cursor = None
 
 def setup(config):
-    global db_connection
+  global db_connection
 	global db_cursor
 	db_connection = pg8000.connect(user="jafoster", database="jafoster")
 	db_connection.autocommit = True
