@@ -4,9 +4,9 @@ from pprint import pprint
 import pg8000
 
 class Modes(Enum):
-  IDLE = 0
-  OPEN = 1
-  CLOSED = 2
+    IDLE = 0
+    OPEN = 1
+    CLOSED = 2
 
 mode = Modes.IDLE
 db_connection = None
